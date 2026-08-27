@@ -5,9 +5,11 @@
     <title>Title</title>
 </head>
 <body>
-<div align="center">
-    <h1>User Registration</h1>
-     <table>
+<div align = "center">
+    <form method="POST">
+        {% csrf_token %}
+        <h1>User Registration</h1>
+        <table>
             <tr>
                 <th>FirstName:</th>
                 <td><input type="text" name="firstName"></td>
@@ -37,7 +39,7 @@
                 <td><input type="submit" value="signUp"></td>
             </tr>
         </table>
-
+</form>
 </div>
 </body>
 </html>
