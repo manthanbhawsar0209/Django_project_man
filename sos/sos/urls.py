@@ -9,5 +9,5 @@ urlpatterns = [
     path('ors/', include('ors.urls')),
     path('man/', include('man.urls')),
     path('josh/', include('josh.urls')),
-
+    path('', include('ors.urls')),
 ]
